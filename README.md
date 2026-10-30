@@ -1,10 +1,10 @@
-# Khuy Cleaner
+# Cleanzy
 
-Trang web đặt lịch dọn nhà theo giờ của **Khuy Cleaner**. Khách hàng chọn dịch vụ, địa chỉ, ngày giờ và thời lượng, xem báo giá ngay lập tức rồi gửi yêu cầu để được gọi xác nhận.
+Trang web đặt lịch dọn nhà theo giờ của **Cleanzy**. Khách hàng chọn dịch vụ, địa chỉ, ngày giờ và thời lượng, xem báo giá ngay lập tức rồi gửi yêu cầu để được gọi xác nhận.
 
 ## Tính năng
 
-- **Giới thiệu dịch vụ** — Khuy Cleaner là ai và cam kết với khách hàng.
+- **Giới thiệu dịch vụ** — Cleanzy là ai và cam kết với khách hàng.
 - **Mô tả dịch vụ theo diện tích** — 2 giờ ≈ 55 m², 3 giờ ≈ 85 m², 4 giờ ≈ 105 m², kèm danh sách công việc của từng gói.
 - **Đặt lịch & báo giá** — giá 250.000–400.000đ/ca, phụ phí cuối tuần / sau 17:00 / vệ sinh kỹ, có trần giá. Yêu cầu được lưu vào cơ sở dữ liệu với mã tham chiếu.
 - **Voucher khách quen** — tự động theo số điện thoại: giảm 5% từ lần đặt thứ 3, 10% từ lần thứ 6, 15% từ lần thứ 10. Có ô kiểm tra ưu đãi.
