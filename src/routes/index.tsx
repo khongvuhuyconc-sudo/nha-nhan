@@ -67,7 +67,7 @@ function Brand({ size = 26 }: { size?: number }) {
         <Leaf size={size / 2} className="brand-leaf" />
       </span>
       <span>
-        khuy cleaner<span className="brand-dot">.</span>
+        cleanzy<span className="brand-dot">.</span>
       </span>
     </>
   )
@@ -193,7 +193,7 @@ function Home() {
       </a>
       <header className="site-header">
         <div className="container header-inner">
-          <a href="#" className="brand" aria-label="Khuy Cleaner — trang chủ">
+          <a href="#" className="brand" aria-label="Cleanzy — trang chủ">
             <Brand />
           </a>
           <nav
@@ -239,7 +239,7 @@ function Home() {
               </span>
             </h1>
             <p>
-              Việc nhà để Khuy Cleaner lo.
+              Việc nhà để Cleanzy lo.
               <br />
               Dành thời gian cho những điều bạn yêu.
             </p>
@@ -266,7 +266,7 @@ function Home() {
                 sizes="(max-width: 760px) 92vw, 48vw"
                 width="1000"
                 height="850"
-                alt="Nhân viên Khuy Cleaner chăm sóc phòng khách sáng thoáng, gọn gàng"
+                alt="Nhân viên Cleanzy chăm sóc phòng khách sáng thoáng, gọn gàng"
                 fetchPriority="high"
               />
             </div>
@@ -521,7 +521,7 @@ function Home() {
                 Tiếp tục đặt lịch <ArrowRight size={17} />
               </button>
               <p className="quote-note">
-                Bảng giá 250.000–400.000đ/ca trước ưu đãi. Lịch và giá được Khuy Cleaner xác
+                Bảng giá 250.000–400.000đ/ca trước ưu đãi. Lịch và giá được Cleanzy xác
                 nhận trước khi thực hiện.
               </p>
             </aside>
@@ -564,7 +564,7 @@ function Home() {
               {
                 icon: Leaf,
                 title: 'Gửi yêu cầu, thảnh thơi',
-                text: 'Khuy Cleaner gọi xác nhận lịch và nhân viên trước khi đến.',
+                text: 'Cleanzy gọi xác nhận lịch và nhân viên trước khi đến.',
               },
             ].map((s, i) => (
               <div className="how-step" key={s.title}>
@@ -645,11 +645,11 @@ function Home() {
               },
               {
                 q: 'Tôi có thể chọn nhân viên quen không?',
-                a: 'Có. Ở bước gửi yêu cầu, bạn có thể chọn nhân viên mong muốn. Khuy Cleaner sẽ ưu tiên sắp xếp nếu nhân viên đó còn lịch trống.',
+                a: 'Có. Ở bước gửi yêu cầu, bạn có thể chọn nhân viên mong muốn. Cleanzy sẽ ưu tiên sắp xếp nếu nhân viên đó còn lịch trống.',
               },
               {
                 q: 'Gửi yêu cầu có nghĩa là đã đặt thành công?',
-                a: 'Chưa. Sau khi gửi, yêu cầu được lưu ở trạng thái chờ xác nhận. Mã yêu cầu giúp bạn đối chiếu khi Khuy Cleaner liên hệ. Bạn không cần thanh toán ở bước này.',
+                a: 'Chưa. Sau khi gửi, yêu cầu được lưu ở trạng thái chờ xác nhận. Mã yêu cầu giúp bạn đối chiếu khi Cleanzy liên hệ. Bạn không cần thanh toán ở bước này.',
               },
             ].map((f) => (
               <details key={f.q}>
@@ -670,7 +670,7 @@ function Home() {
             <Brand size={24} />
           </a>
           <span>Nhà sạch hơn. Bạn thảnh thơi hơn.</span>
-          <span>© 2026 Khuy Cleaner</span>
+          <span>© 2026 Cleanzy</span>
         </div>
       </footer>
 
@@ -702,7 +702,7 @@ function Home() {
               đến nhà sạch.
             </h2>
             <p>
-              Yêu cầu của bạn đang chờ xác nhận. Khuy Cleaner sẽ liên hệ để xác nhận lịch và
+              Yêu cầu của bạn đang chờ xác nhận. Cleanzy sẽ liên hệ để xác nhận lịch và
               nhân viên thực hiện.
             </p>
             <div className="success-reference">
@@ -730,7 +730,7 @@ function Home() {
         ) : (
           <form className="contact-form" onSubmit={submit}>
             <span className="eyebrow">CHỈ CÒN MỘT BƯỚC NỮA</span>
-            <h2 id="dialog-title">Để Khuy Cleaner liên hệ bạn.</h2>
+            <h2 id="dialog-title">Để Cleanzy liên hệ bạn.</h2>
             <p>Thông tin này được lưu cùng yêu cầu để chúng mình xác nhận lịch.</p>
             <div className="modal-summary">
               <CalendarDays size={18} />
@@ -772,7 +772,7 @@ function Home() {
                     ? `Chào khách quen! Voucher ${loyalty.current.code} giảm ${loyalty.current.percent}% đã được áp dụng.`
                     : loyalty.next
                       ? `Đặt thêm ${loyalty.next.remaining} lần nữa (tính cả lần này) để nhận voucher giảm ${loyalty.next.percent}%.`
-                      : 'Cảm ơn bạn đã tin chọn Khuy Cleaner.'}
+                      : 'Cảm ơn bạn đã tin chọn Cleanzy.'}
                 </span>
               </div>
             )}
@@ -784,7 +784,7 @@ function Home() {
                 value={contact.preferredStaff}
                 onChange={(e) => setContact({ ...contact, preferredStaff: e.target.value })}
               >
-                <option value="">Để Khuy Cleaner sắp xếp</option>
+                <option value="">Để Cleanzy sắp xếp</option>
                 {STAFF.map((s) => (
                   <option key={s.slug} value={s.slug}>
                     {s.name}
@@ -816,7 +816,7 @@ function Home() {
             <label className="consent">
               <input type="checkbox" required />
               <span>
-                Tôi đồng ý để Khuy Cleaner sử dụng thông tin liên hệ và địa chỉ cho yêu cầu này.
+                Tôi đồng ý để Cleanzy sử dụng thông tin liên hệ và địa chỉ cho yêu cầu này.
                 Tôi hiểu lịch và giá cần được xác nhận.
               </span>
             </label>
