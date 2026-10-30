@@ -59,7 +59,7 @@ export function StaffSection() {
     <section className="staff-section container" id="nhan-vien">
       <div className="section-heading">
         <div>
-          <span className="eyebrow">ĐỘI NGŨ KHUY CLEANER</span>
+          <span className="eyebrow">ĐỘI NGŨ CLEANZY</span>
           <h2>Đánh giá nhân viên</h2>
         </div>
         <span className="heading-note">
@@ -218,7 +218,7 @@ function ReviewDialog({
           </span>
           <span className="eyebrow">CẢM ƠN BẠN</span>
           <h2 id="review-title">Đánh giá đã được ghi nhận.</h2>
-          <p>Nhận xét của bạn về {staff?.name} giúp đội ngũ Khuy Cleaner làm tốt hơn mỗi ngày.</p>
+          <p>Nhận xét của bạn về {staff?.name} giúp đội ngũ Cleanzy làm tốt hơn mỗi ngày.</p>
           <button className="button primary" type="button" onClick={onClose}>
             Hoàn tất <Check size={17} />
           </button>
