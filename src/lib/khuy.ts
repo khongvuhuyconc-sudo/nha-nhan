@@ -1,7 +1,7 @@
-// Shared business rules for Khuy Cleaner: services, packages, pricing,
+// Shared business rules for Cleanzy: services, packages, pricing,
 // loyalty vouchers and the staff roster. Used by both the page and the API.
 
-export const BRAND = 'Khuy Cleaner'
+export const BRAND = 'Cleanzy'
 
 export const SERVICES = [
   {
@@ -92,7 +92,7 @@ export const VOUCHER_TIERS = [
   },
   {
     code: 'KHUYVIP',
-    name: 'Khuy VIP',
+    name: 'Cleanzy VIP',
     minPrevious: 9,
     percent: 15,
     label: 'Từ lần đặt thứ 10',
