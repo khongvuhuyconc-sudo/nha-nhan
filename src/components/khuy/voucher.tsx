@@ -47,7 +47,7 @@ export function VoucherSection() {
         </h2>
         <p>
           Voucher được áp dụng tự động theo số điện thoại bạn dùng khi đặt lịch. Không cần nhập
-          mã, không cần nhớ — Khuy Cleaner tự nhận ra khách quen.
+          mã, không cần nhớ — Cleanzy tự nhận ra khách quen.
         </p>
         <form className="voucher-check" onSubmit={check}>
           <label className="field">
