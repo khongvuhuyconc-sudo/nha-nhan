@@ -27,7 +27,7 @@ export function AboutSection() {
         {[
           {
             icon: Users,
-            title: `${STAFF.length} nhân viên tận tâm`,
+            title: `Rất nhiều nhân viên tận tâm`,
             text: 'Đội ngũ cố định, được hướng dẫn quy trình dọn dẹp thống nhất.',
           },
           {
