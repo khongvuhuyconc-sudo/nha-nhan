@@ -6,14 +6,14 @@ export function AboutSection() {
   return (
     <section className="about-section container" id="gioi-thieu">
       <div className="about-copy">
-        <span className="eyebrow">VỀ KHUY CLEANER</span>
+        <span className="eyebrow">VỀ CLEANZY</span>
         <h2>
           Một đội nhỏ, tận tâm,
           <br />
           giữ nhà bạn luôn gọn.
         </h2>
         <p>
-          Khuy Cleaner là dịch vụ dọn nhà theo giờ dành cho căn hộ và nhà phố. Bạn chọn thời
+          Cleanzy là dịch vụ dọn nhà theo giờ dành cho căn hộ và nhà phố. Bạn chọn thời
           lượng, chúng mình cử nhân viên đã được hướng dẫn kỹ đến tận nơi — đúng giờ, mang
           theo tinh thần chu đáo như chăm sóc chính ngôi nhà của mình.
         </p>
