@@ -7,9 +7,9 @@ import { NotFoundPage } from '@/components/error-pages'
 import '../styles.css'
 import '../site.css'
 
-const siteName = 'Khuy Cleaner — Dọn nhà theo giờ'
+const siteName = 'Cleanzy — Dọn nhà theo giờ'
 const siteDescription =
-  'Khuy Cleaner dọn nhà theo giờ: 2 giờ cho 55 m², 3 giờ cho 85 m², 4 giờ cho 105 m². Giá minh bạch, ưu đãi cho khách quen.'
+  'Cleanzy dọn nhà theo giờ: 2 giờ cho 55 m², 3 giờ cho 85 m², 4 giờ cho 105 m². Giá minh bạch, ưu đãi cho khách quen.'
 
 export const Route = createRootRoute({
   head: () => ({
