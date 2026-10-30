@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Khuy Cleaner — a Vietnamese single-page site for booking hourly home cleaning. All UI copy is Vietnamese.
+Cleanzy — a Vietnamese single-page site for booking hourly home cleaning. All UI copy is Vietnamese.
 
 ## Architecture
 
