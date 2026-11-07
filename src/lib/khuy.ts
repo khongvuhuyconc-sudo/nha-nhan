@@ -72,7 +72,7 @@ export function packageFor(hours: number) {
   return PACKAGES.find((p) => p.hours === hours) ?? PACKAGES[1]
 }
 
-export const PRICE_CAP = 400_000
+export const PRICE_CAP = 425_000
 
 /** Loyalty tiers — based on how many earlier requests share a phone number. */
 export const VOUCHER_TIERS = [
@@ -164,8 +164,8 @@ export function quote(b: BookingDraft, discountPercent = 0) {
   const evening = Number(b.time.split(':')[0]) >= 17 ? 25_000 : 0
   const serviceFee = SERVICES.find((s) => s.id === b.service)?.extra ?? 0
   const raw = base + weekend + evening + serviceFee
-  const cap = Math.max(0, raw - PRICE_CAP)
-  const subtotal = raw - cap
+  const cap = 0
+  const subtotal = raw
   const voucher = Math.round((subtotal * discountPercent) / 100 / 1000) * 1000
   return {
     base,
