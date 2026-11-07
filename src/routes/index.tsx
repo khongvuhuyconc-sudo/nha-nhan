@@ -515,7 +515,7 @@ function Home() {
                 Tiếp tục đặt lịch <ArrowRight size={17} />
               </button>
               <p className="quote-note">
-                Bảng giá 250.000–400.000đ/ca trước ưu đãi. Lịch và giá được Cleanzy xác
+                Bảng giá 250.000–425.000đ/ca trước ưu đãi. Lịch và giá được Cleanzy xác
                 nhận trước khi thực hiện.
               </p>
             </aside>
@@ -587,7 +587,7 @@ function Home() {
               Mỗi ca dành cho một nhân viên.
             </p>
             <span className="pricing-badge">
-              <CircleCheck size={16} /> Tổng tiền không quá 400.000đ/ca
+              <CircleCheck size={16} /> Tổng tiền không quá 425.000đ/ca
             </span>
           </div>
           <div className="price-table">
@@ -609,7 +609,6 @@ function Home() {
               <br />
               Vệ sinh kỹ: +25.000đ · Không phụ phí theo địa chỉ.
               <br />
-              Tổng phụ phí được điều chỉnh để giá không vượt 400.000đ.
             </p>
           </div>
         </section>
