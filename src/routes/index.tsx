@@ -494,12 +494,6 @@ function Home() {
                   <span>Phụ phí từ 17:00</span>
                   <strong>{price.evening ? `+${formatVnd(price.evening)}` : '0đ'}</strong>
                 </div>
-                {price.cap > 0 && (
-                  <div className="price-cap">
-                    <span>Điều chỉnh trần giá</span>
-                    <strong>−{formatVnd(price.cap)}</strong>
-                  </div>
-                )}
                 {price.voucher > 0 && (
                   <div className="price-cap">
                     <span>
