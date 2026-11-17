@@ -2953,3 +2953,88 @@ body { background: #F7F3EC; color: #49362C; }
 .staff-grid .staff-card:nth-child(9) .staff-avatar { background: #6A7191; }
 .staff-grid .staff-card:nth-child(10) .staff-avatar { background: #8D655E; }
 .staff-grid .staff-card .staff-avatar { color: #fff; }
+
+
+/* SECTION-BY-SECTION JAPANDI COLOR RHYTHM — palette-led, no logic changes */
+:root {
+  --cleanzy-brown: #49362C;
+  --cleanzy-oak: #A67C5B;
+  --cleanzy-sand: #D8C3A5;
+  --cleanzy-ivory: #F7F3EC;
+  --cleanzy-olive: #7A8067;
+}
+/* Intro: warm ivory */
+.hero { background: #F7F3EC; }
+/* About: subtle wood tint */
+.about-section {
+  background: #F1E9DC;
+  padding-inline: clamp(16px, 3vw, 36px);
+  border-top: 1px solid #D8C3A5;
+}
+/* Packages: light ivory with individually differentiated featured card */
+.packages-section {
+  background: #FFFCF7;
+  padding-inline: clamp(16px, 3vw, 36px);
+}
+.packages-section .package-card { background: #F7F3EC; border-color: #D8C3A5; }
+.packages-section .package-card.featured { background: #EDE2D2; border-color: #A67C5B; }
+/* Inspiration photos: muted sand frame */
+.japandi-gallery-section {
+  background: #EDE4D7;
+  padding-inline: clamp(16px, 3vw, 36px);
+}
+/* Booking: distinguish the entire booking block using a sand backdrop */
+.booking-section {
+  background: #E7D7C3;
+  padding-inline: clamp(16px, 3vw, 36px);
+  border-top: 1px solid #D1B99B;
+  border-bottom: 1px solid #D1B99B;
+}
+.booking-section .booking-card { background: #FFFCF7; border: 1px solid #CDB79C; }
+.booking-section .booking-form { background: #FFFCF7; }
+.booking-section .cleanzy-booking-progress { background: #F2E7D8; }
+.booking-section .quote-panel { background: #EDE1D1; }
+.booking-section .button.primary { background: #49362C; color: #fff; }
+/* Steps / service explanations: soft ivory */
+.how-section { background: #F7F3EC; }
+.pricing-section { background: #F3EDE4; padding-inline: clamp(16px, 3vw, 36px); }
+/* Voucher: olive-inflected neutral, distinct from booking */
+.voucher-section {
+  background: #E8EBDD;
+  padding-inline: clamp(16px, 3vw, 36px);
+  border-top: 1px solid #CAD0BD;
+}
+.voucher-section .voucher-ticket { background: #F8F7F0; border-color: #B9BEA9; }
+/* Staff: cream background; reviews use olive-tinted cards */
+.staff-section {
+  background: #F4F0E7;
+  padding-inline: clamp(16px, 3vw, 36px);
+}
+.staff-section .staff-card { background: #FDFBF6; border-color: #D8C3A5; }
+.staff-section .review-list {
+  margin-top: 42px;
+  padding: 26px;
+  background: #E7E9DC;
+  border: 1px solid #C9CEBA;
+}
+.staff-section .review-list-head h3 { color: #49362C; }
+.staff-section .review-item,
+.staff-section .cleanzy-review-card {
+  background: #F9FAF4;
+  border: 1px solid #BFC7B2;
+}
+.staff-section .cleanzy-review-rating { color: #566448; }
+.staff-section .cleanzy-review-avatar { background: #7A8067; color: #fff; }
+/* FAQ: pale sand to separate it from staff feedback */
+.faq-section {
+  background: #EFE5D8;
+  padding-inline: clamp(16px, 3vw, 36px);
+  border-top: 1px solid #D8C3A5;
+}
+.site-footer { background: #49362C; color: #F7F3EC; }
+@media (max-width: 760px) {
+  .about-section, .packages-section, .japandi-gallery-section,
+  .booking-section, .pricing-section, .voucher-section,
+  .staff-section, .faq-section { padding-inline: 14px; }
+  .staff-section .review-list { padding: 14px; margin-top: 28px; }
+}
