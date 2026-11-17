@@ -2065,3 +2065,305 @@ h2 {
   flex-wrap: wrap;
   row-gap: 8px;
 }
+
+/* =========================================
+   CLEANZY - GIAO DIEN XANH LA / KEM
+   UI upgrade - giu nguyen logic website
+========================================= */
+
+:root {
+  --ink: #253D31;
+  --green: #204F3B;
+  --green-dark: #173E2D;
+  --muted: #718076;
+  --cream: #F8F6EE;
+  --line: #E2E8DC;
+  --sage: #E6EFDB;
+  --lime: #D7E8B8;
+  --gold: #D7B978;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+}
+
+::selection {
+  background: #D7E8B8;
+  color: #173E2D;
+}
+
+/* 1. Thanh menu */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(248, 246, 238, 0.96);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 4px 20px rgba(32, 79, 59, 0.04);
+}
+
+.brand {
+  color: var(--green);
+}
+
+.navigation a {
+  transition: color 0.2s ease;
+}
+
+.navigation a:hover {
+  color: #4F8760;
+}
+
+.header-cta {
+  border-radius: 999px;
+  border-color: var(--green);
+  color: var(--green);
+  transition: 0.2s ease;
+}
+
+.header-cta:hover {
+  background: var(--green);
+  color: #fff;
+}
+
+/* 2. Khu vuc banner */
+
+.hero {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.hero h1 {
+  color: var(--green-dark);
+  letter-spacing: -0.045em;
+}
+
+.hero-copy > p {
+  color: #607166;
+  line-height: 1.85;
+}
+
+.hero-image {
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(32, 79, 59, 0.14);
+}
+
+.hero-image img {
+  transition: transform 0.5s ease;
+}
+
+.hero-image:hover img {
+  transform: scale(1.025);
+}
+
+/* 3. Nut bam */
+
+.button.primary,
+.quote-submit {
+  background: var(--green);
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(32, 79, 59, 0.12);
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease,
+              background 0.2s ease;
+}
+
+.button.primary:hover:not(:disabled),
+.quote-submit:hover:not(:disabled) {
+  background: var(--green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(32, 79, 59, 0.2);
+}
+
+/* 4. Tieu de cac khu vuc */
+
+.section-heading h2,
+.about-copy h2,
+.voucher-copy h2 {
+  color: var(--green-dark);
+}
+
+.eyebrow {
+  color: #547C5E;
+  font-weight: 700;
+}
+
+/* 5. The gioi thieu */
+
+.about-value {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 24px;
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.about-value:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(32, 79, 59, 0.08);
+}
+
+/* 6. Cac goi dich vu */
+
+.package-card {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: 0 8px 24px rgba(32, 79, 59, 0.04);
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 36px rgba(32, 79, 59, 0.12);
+}
+
+.package-card.featured {
+  border: 2px solid var(--green);
+  background: #FBFDF8;
+}
+
+.package-head strong,
+.package-foot strong {
+  color: var(--green-dark);
+}
+
+/* 7. Form dat lich */
+
+.booking-card {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: 0 18px 50px rgba(32, 79, 59, 0.08);
+}
+
+.service-option {
+  border-radius: 14px;
+  transition: 0.2s ease;
+}
+
+.service-option:hover {
+  border-color: #A5BEA3;
+}
+
+.service-option.selected {
+  border-color: var(--green);
+  background: #EFF6E8;
+}
+
+.duration-options button {
+  border-radius: 12px;
+}
+
+.duration-options button.active {
+  background: var(--green);
+  color: #fff;
+}
+
+.quote-panel {
+  border-radius: 20px;
+}
+
+/* 8. Uu dai voucher */
+
+.voucher-ticket {
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(32, 79, 59, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.voucher-ticket:hover {
+  transform: translateY(-3px);
+}
+
+/* 9. Nhan vien */
+
+.staff-card {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(32, 79, 59, 0.04);
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.staff-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(32, 79, 59, 0.1);
+}
+
+.staff-card h3 {
+  color: var(--green-dark);
+}
+
+.staff-avatar {
+  border: 2px solid #E2ECDD;
+}
+
+/* 10. Danh gia khach hang */
+
+.review-item {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+/* 11. Chan trang */
+
+.site-footer {
+  background: #E8EFE3;
+  border-top: 1px solid #D9E3D3;
+}
+
+/* 12. Dien thoai */
+
+@media (max-width: 760px) {
+  .hero {
+    padding-top: 32px;
+    padding-bottom: 36px;
+  }
+
+  .hero-image {
+    border-radius: 20px;
+  }
+
+  .package-card,
+  .staff-card {
+    border-radius: 16px;
+  }
+
+  .booking-card {
+    border-radius: 18px;
+  }
+
+  .button {
+    min-height: 44px;
+  }
+}
+
+/* Ho tro nguoi dung han che chuyen dong */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-image img,
+  .package-card,
+  .staff-card,
+  .voucher-ticket,
+  .about-value,
+  .button.primary {
+    transition: none;
+  }
+
+  .hero-image:hover img,
+  .package-card:hover,
+  .staff-card:hover,
+  .voucher-ticket:hover,
+  .about-value:hover,
+  .button.primary:hover {
+    transform: none;
+  }
+}
