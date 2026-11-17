@@ -115,11 +115,11 @@ export const STAFF = [
   { slug: 'khong-vu-huy', name: 'Khổng Vũ Huy', role: 'Trưởng nhóm vệ sinh kỹ', years: 4 },
   { slug: 'le-dinh-anh-huy', name: 'Lê Đình Anh Huy', role: 'Chuyên viên dọn nhà phố', years: 3 },
   { slug: 'do-thi-thanh-huyen', name: 'Đỗ Thị Thanh Huyền', role: 'Chuyên viên phụ trách dọn bếp', years: 5 },
-  { slug: 'le-thi-thu-huyen', name: 'Lê Thị Thu Huyền', role: 'Chuyên viên ọn dẹp căn hộ', years: 2 },
+  { slug: 'le-thi-thu-huyen', name: 'Lê Thị Thu Huyền', role: 'Chuyên viên dọn dẹp căn hộ', years: 2 },
   { slug: 'ninh-thi-huyen', name: 'Ninh Thị Huyền', role: 'Chuyên viên Sắp xếp & gấp đồ', years: 3 },
   { slug: 'bui-thuy-linh', name: 'Bùi Thùy Linh', role: 'Chuyên viên vệ sinh phòng tắm', years: 2 },
   { slug: 'duong-thi-khanh-linh', name: 'Dương Thị Khánh Linh', role: 'Chuyên viên dọn dẹp căn hộ', years: 1 },
-  { slug: 'nguyen-binh-minh-an', name: 'Nguyễn Bình Minh An', role: 'Chuyên vệ sinh kính và ban công', years: 3 },
+  { slug: 'nguyen-binh-minh-an', name: 'Nguyễn Bình Minh An', role: 'Chuyên vệ sinh kính và các loại cửa kính ', years: 3 },
   { slug: 'truong-hoang-giang', name: 'Trương Hoàng Giang', role: 'Chuyên vệ sinh sofa, thảm và nệm', years: 5 },
   { slug: 'ngo-thi-bao-huong', name: 'Ngô Thị Bảo Hương', role: 'Chuyên vệ sinh sau xây dựng', years: 6 },
 ] as const
@@ -162,7 +162,10 @@ export function quote(b: BookingDraft, discountPercent = 0) {
   const day = new Date(`${b.date}T12:00:00+07:00`).getUTCDay()
   const weekend = day === 0 || day === 6 ? 25_000 : 0
   const evening = Number(b.time.split(':')[0]) >= 17 ? 25_000 : 0
-  const serviceFee = SERVICES.find((s) => s.id === b.service)?.extra ?? 0
+  const serviceFee =
+  b.service === 'deep'
+    ? (b.hours - 1) * 25_000
+    : SERVICES.find((s) => s.id === b.service)?.extra ?? 0
   const raw = base + weekend + evening + serviceFee
   const cap = 0
   const subtotal = raw
