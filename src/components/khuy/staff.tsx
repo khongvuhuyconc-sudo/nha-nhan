@@ -113,7 +113,7 @@ export function StaffSection() {
       <div className="review-list">
         <div className="review-list-head">
           <h3>
-            {filter ? `Nhận xét về ${staffBySlug(filter)?.name}` : 'Nhận xét gần đây'}
+            {filter ? `Nhận xét về ${staffBySlug(filter)?.name}` : 'Khách hàng nói gì về Cleanzy?'}
           </h3>
           {filter && (
             <button type="button" className="link-button" onClick={() => setFilter('')}>
@@ -130,12 +130,23 @@ export function StaffSection() {
         ) : (
           <div className="review-items">
             {shown.slice(0, 9).map((r) => (
-              <figure className="review-item" key={r.id}>
-                <Stars value={r.rating} />
-                <blockquote>{r.comment}</blockquote>
+              <figure className="review-item cleanzy-review-card" key={r.id}>
+                <div className="cleanzy-review-top">
+                  <Stars value={r.rating} />
+                  <span className="cleanzy-review-rating">{r.rating}/5</span>
+                </div>
+                <blockquote>“{r.comment}”</blockquote>
                 <figcaption>
-                  <strong>{r.reviewerName}</strong> về {staffBySlug(r.staffSlug)?.name} ·{' '}
-                  {new Date(r.createdAt).toLocaleDateString('vi-VN')}
+                  <span className="cleanzy-review-avatar" aria-hidden="true">
+                    {initials(r.reviewerName)}
+                  </span>
+                  <span className="cleanzy-review-author">
+                    <strong>{r.reviewerName}</strong>
+                    <small>Đánh giá về {staffBySlug(r.staffSlug)?.name}</small>
+                  </span>
+                  <time dateTime={r.createdAt}>
+                    {new Date(r.createdAt).toLocaleDateString('vi-VN')}
+                  </time>
                 </figcaption>
               </figure>
             ))}
