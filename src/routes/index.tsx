@@ -239,9 +239,9 @@ function Home() {
               </span>
             </h1>
             <p>
-              Việc nhà để Cleanzy lo.
+              Cleanzy mang đến dịch vụ vệ sinh nhà cửa theo giờ, tiện lợi và minh bạch.
               <br />
-              Dành thời gian cho những điều bạn yêu.
+              Đặt lịch dễ dàng, biết giá trước khi đặt và tận hưởng không gian sống sạch đẹp.
             </p>
             <a href="#dat-lich" className="button primary hero-button">
               Đặt lịch dọn nhà <ArrowRight size={18} />
@@ -308,6 +308,22 @@ function Home() {
             </span>
           </div>
           <div className="booking-card">
+            <div className="cleanzy-booking-progress" aria-label="Các bước đặt lịch">
+              <div className="cleanzy-progress-step">
+                <span>1</span>
+                <strong>Chọn dịch vụ</strong>
+              </div>
+              <div className="cleanzy-progress-line" aria-hidden="true" />
+              <div className="cleanzy-progress-step">
+                <span>2</span>
+                <strong>Địa chỉ</strong>
+              </div>
+              <div className="cleanzy-progress-line" aria-hidden="true" />
+              <div className="cleanzy-progress-step">
+                <span>3</span>
+                <strong>Chọn lịch</strong>
+              </div>
+            </div>
             <form
               className="booking-form"
               onSubmit={(e) => {
