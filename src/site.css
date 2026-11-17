@@ -3038,3 +3038,31 @@ body { background: #F7F3EC; color: #49362C; }
   .staff-section, .faq-section { padding-inline: 14px; }
   .staff-section .review-list { padding: 14px; margin-top: 28px; }
 }
+
+
+/* Professional cleaning task photo cards — Japandi */
+.cleanzy-task-section { margin-top: 52px; padding-top: 42px; border-top: 1px solid #D8C3A5; }
+.cleanzy-task-heading { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 24px; }
+.cleanzy-task-heading h3 { margin: 9px 0 0; font: 400 clamp(27px, 3vw, 39px)/1.2 Georgia, 'Times New Roman', serif; letter-spacing: -.035em; color: #49362C; }
+.cleanzy-task-heading > p { max-width: 350px; font-size: 13px; line-height: 1.8; color: #786D61; }
+.cleanzy-task-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; }
+.cleanzy-task-card { overflow: hidden; border: 1px solid #D8C3A5; background: #F7F3EC; }
+.cleanzy-task-photo { position: relative; overflow: hidden; aspect-ratio: 1.55; background: #D8C3A5; }
+.cleanzy-task-photo img { display: block; width: 100%; height: 100%; object-fit: cover; filter: saturate(.8); transition: transform .35s ease; }
+.cleanzy-task-card:hover .cleanzy-task-photo img { transform: scale(1.035); }
+.cleanzy-task-number { position: absolute; left: 12px; top: 12px; padding: 5px 8px; background: rgba(247,243,236,.94); color: #49362C; font-size: 11px; letter-spacing: .1em; }
+.cleanzy-task-info { padding: 20px; }
+.cleanzy-task-info h4 { margin: 0 0 8px; font-size: 16px; font-weight: 650; color: #49362C; }
+.cleanzy-task-info p { margin: 0; font-size: 12px; line-height: 1.8; color: #76695E; }
+.cleanzy-task-caption { margin: 16px 0 0; font-size: 11px; line-height: 1.7; color: #81766A; }
+@media (max-width: 900px) { .cleanzy-task-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 600px) {
+  .cleanzy-task-section { margin-top: 35px; padding-top: 30px; }
+  .cleanzy-task-heading { display: block; }
+  .cleanzy-task-heading > p { margin-top: 12px; }
+  .cleanzy-task-grid { gap: 12px; }
+  .cleanzy-task-info { padding: 12px; }
+  .cleanzy-task-info h4 { font-size: 13px; }
+  .cleanzy-task-info p { font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) { .cleanzy-task-photo img { transition: none; } .cleanzy-task-card:hover .cleanzy-task-photo img { transform: none; } }
