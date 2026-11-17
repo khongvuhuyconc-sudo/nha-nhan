@@ -2939,3 +2939,17 @@ body { background: #F7F3EC; color: #49362C; }
 @media (max-width: 760px) {
   .staff-card .staff-avatar { width: 56px; height: 56px; font-size: 17px; }
 }
+
+
+/* One distinct, Japandi-compatible color for each staff avatar (10 cards) */
+.staff-grid .staff-card:nth-child(1) .staff-avatar { background: #A67C5B; }
+.staff-grid .staff-card:nth-child(2) .staff-avatar { background: #657C61; }
+.staff-grid .staff-card:nth-child(3) .staff-avatar { background: #B77555; }
+.staff-grid .staff-card:nth-child(4) .staff-avatar { background: #71647D; }
+.staff-grid .staff-card:nth-child(5) .staff-avatar { background: #9B7850; }
+.staff-grid .staff-card:nth-child(6) .staff-avatar { background: #527C79; }
+.staff-grid .staff-card:nth-child(7) .staff-avatar { background: #A65F69; }
+.staff-grid .staff-card:nth-child(8) .staff-avatar { background: #727C4C; }
+.staff-grid .staff-card:nth-child(9) .staff-avatar { background: #6A7191; }
+.staff-grid .staff-card:nth-child(10) .staff-avatar { background: #8D655E; }
+.staff-grid .staff-card .staff-avatar { color: #fff; }
