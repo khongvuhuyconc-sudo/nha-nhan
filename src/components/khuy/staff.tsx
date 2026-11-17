@@ -72,7 +72,7 @@ export function StaffSection() {
           const sum = summaries.find((x) => x.slug === s.slug)
           return (
             <article className="staff-card" key={s.slug}>
-              <span className={`staff-avatar tone-${i % 4}`} aria-hidden="true">
+              <span className="staff-avatar" aria-hidden="true">
                 {initials(s.name)}
               </span>
               <h3>{s.name}</h3>
