@@ -108,6 +108,80 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
           </article>
         ))}
       </div>
+
+      <section className="cleanzy-task-section" id="cong-viec-ve-sinh" aria-labelledby="cleanzy-task-title">
+        <div className="cleanzy-task-heading">
+          <div>
+            <span className="eyebrow">CÔNG VIỆC CỦA CLEANZY</span>
+            <h3 id="cleanzy-task-title">Chúng mình chăm chút những gì?</h3>
+          </div>
+          <p>Mỗi công việc đều có hình ảnh minh họa để bạn dễ hình dung dịch vụ trước khi đặt lịch.</p>
+        </div>
+        <div className="cleanzy-task-grid">
+          <article className="cleanzy-task-card">
+            <div className="cleanzy-task-photo">
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="Ảnh minh họa công việc: hút bụi & lau sàn" loading="lazy" decoding="async" width="800" height="520" />
+              <span className="cleanzy-task-number">01</span>
+            </div>
+            <div className="cleanzy-task-info">
+              <h4>Hút bụi & lau sàn</h4>
+              <p>Quét, hút bụi và lau sạch sàn nhà, đặc biệt ở khu vực sinh hoạt chung.</p>
+            </div>
+          </article>
+          <article className="cleanzy-task-card">
+            <div className="cleanzy-task-photo">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Ảnh minh họa công việc: lau bàn ghế & bề mặt" loading="lazy" decoding="async" width="800" height="520" />
+              <span className="cleanzy-task-number">02</span>
+            </div>
+            <div className="cleanzy-task-info">
+              <h4>Lau bàn ghế & bề mặt</h4>
+              <p>Làm sạch bàn, kệ, tay nắm cửa và các bề mặt sử dụng thường xuyên.</p>
+            </div>
+          </article>
+          <article className="cleanzy-task-card">
+            <div className="cleanzy-task-photo">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Ảnh minh họa công việc: vệ sinh phòng tắm" loading="lazy" decoding="async" width="800" height="520" />
+              <span className="cleanzy-task-number">03</span>
+            </div>
+            <div className="cleanzy-task-info">
+              <h4>Vệ sinh phòng tắm</h4>
+              <p>Lau rửa lavabo, gương và các bề mặt phòng tắm theo phạm vi gói.</p>
+            </div>
+          </article>
+          <article className="cleanzy-task-card">
+            <div className="cleanzy-task-photo">
+              <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80" alt="Ảnh minh họa công việc: làm sạch khu vực bếp" loading="lazy" decoding="async" width="800" height="520" />
+              <span className="cleanzy-task-number">04</span>
+            </div>
+            <div className="cleanzy-task-info">
+              <h4>Làm sạch khu vực bếp</h4>
+              <p>Lau mặt bếp, bàn bếp, bồn rửa và sắp xếp khu vực nấu nướng.</p>
+            </div>
+          </article>
+          <article className="cleanzy-task-card">
+            <div className="cleanzy-task-photo">
+              <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Ảnh minh họa công việc: sắp xếp đồ đạc" loading="lazy" decoding="async" width="800" height="520" />
+              <span className="cleanzy-task-number">05</span>
+            </div>
+            <div className="cleanzy-task-info">
+              <h4>Sắp xếp đồ đạc</h4>
+              <p>Chỉnh trang phòng ngủ, gấp chăn gối và sắp xếp vật dụng gọn gàng.</p>
+            </div>
+          </article>
+          <article className="cleanzy-task-card">
+            <div className="cleanzy-task-photo">
+              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt="Ảnh minh họa công việc: lau kính & góc khuất" loading="lazy" decoding="async" width="800" height="520" />
+              <span className="cleanzy-task-number">06</span>
+            </div>
+            <div className="cleanzy-task-info">
+              <h4>Lau kính & góc khuất</h4>
+              <p>Lau kính tầm thấp và chăm chút các góc khó tiếp cận theo gói phù hợp.</p>
+            </div>
+          </article>
+        </div>
+        <p className="cleanzy-task-caption">Ảnh minh họa; phạm vi công việc cụ thể phụ thuộc vào gói dịch vụ và thời lượng bạn chọn.</p>
+      </section>
+
       
       <p className="packages-note">
         <strong>Dịch vụ vệ sinh kỹ:</strong> Phù hợp với những
