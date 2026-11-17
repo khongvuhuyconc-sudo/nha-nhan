@@ -162,9 +162,9 @@ export function quote(b: BookingDraft, discountPercent = 0) {
   const weekend = day === 0 || day === 6 ? 25_000 : 0
   const evening = Number(b.time.split(':')[0]) >= 17 ? 25_000 : 0
   const serviceFee =
-  b.service === 'deep'
-    ? (b.hours - 1) * 25_000
-    : SERVICES.find((s) => s.id === b.service)?.extra ?? 0
+    b.service === 'deep'
+      ? 25_000
+      : (SERVICES.find((s) => s.id === b.service)?.extra ?? 0)
   const raw = base + weekend + evening + serviceFee
   const cap = 0
   const subtotal = raw
