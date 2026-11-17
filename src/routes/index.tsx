@@ -261,12 +261,11 @@ function Home() {
           <div className="hero-visual">
             <div className="hero-image">
               <img
-                src="/.netlify/images?url=/img/clean-home.png&w=1000&fm=webp"
-                srcSet="/.netlify/images?url=/img/clean-home.png&w=600&fm=webp 600w, /.netlify/images?url=/img/clean-home.png&w=1000&fm=webp 1000w"
-                sizes="(max-width: 760px) 92vw, 48vw"
-                width="1000"
-                height="850"
-                alt="Nhân viên Cleanzy chăm sóc phòng khách sáng thoáng, gọn gàng"
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85"
+                sizes="(max-width: 760px) 100vw, 1100px"
+                width="1600"
+                height="900"
+                alt="Không gian sống phong cách Japandi với gỗ tự nhiên và ánh sáng ấm, ảnh minh họa"
                 fetchPriority="high"
               />
             </div>
