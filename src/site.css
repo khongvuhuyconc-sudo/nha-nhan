@@ -3066,3 +3066,61 @@ body { background: #F7F3EC; color: #49362C; }
   .cleanzy-task-info p { font-size: 11px; }
 }
 @media (prefers-reduced-motion: reduce) { .cleanzy-task-photo img { transition: none; } .cleanzy-task-card:hover .cleanzy-task-photo img { transform: none; } }
+
+
+/* Cleanzy typography & hero QA — Vietnamese first, premium Japandi */
+:root {
+  --font-body: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-heading: 'Noto Serif', Georgia, 'Times New Roman', serif;
+}
+html { text-rendering: optimizeLegibility; }
+body { font-family: var(--font-body); font-size: 14px; line-height: 1.65; }
+button, input, select, textarea { font-family: var(--font-body); }
+.hero h1, main h2, .about-copy h2, .voucher-copy h2,
+.cleanzy-task-heading h3 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-synthesis: none;
+  letter-spacing: -.035em;
+}
+.hero h1 { line-height: 1.16; letter-spacing: -.045em; }
+.main-title, .section-heading h2, .cleanzy-task-heading h3 { line-height: 1.35; }
+.eyebrow { font-size: 11px; letter-spacing: .16em; line-height: 1.65; }
+.navigation a { font-size: 12px; line-height: 1.6; }
+.header-cta, .button, .hero-button, .quote-submit { font-size: 12px; font-weight: 650; line-height: 1.45; }
+.hero-copy > p { font-size: 14px; line-height: 1.9; }
+.hero-benefits { font-size: 11.5px; }
+.heading-note, .packages-note, .package-fits,
+.cleanzy-task-heading > p { font-size: 12.5px; line-height: 1.85; }
+.package-card ul li { font-size: 12.5px; line-height: 1.65; }
+.cleanzy-task-info h4 { font-size: 15px; }
+.cleanzy-task-info p { font-size: 12.5px; line-height: 1.8; }
+.staff-role, .staff-rating, .cleanzy-review-author small,
+.cleanzy-review-card time { font-size: 11.5px; }
+.review-item blockquote, .cleanzy-review-card blockquote { font-size: 12.5px; line-height: 1.85; }
+.japandi-gallery-heading > p { font-size: 13px; line-height: 1.85; }
+.japandi-gallery-item figcaption strong { font-size: 15px; }
+.cleanzy-task-caption, .japandi-gallery-disclaimer { font-size: 11.5px; line-height: 1.8; }
+/* New banner includes its own callouts: do not display duplicate HTML labels */
+.hero-image {
+  height: auto;
+  aspect-ratio: 1802 / 873;
+  background: #D8C3A5;
+}
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  filter: none;
+}
+@media (max-width: 760px) {
+  .hero h1 { font-size: clamp(39px, 9vw, 58px); }
+  .hero-image { height: clamp(230px, 67vw, 365px); aspect-ratio: auto; }
+  .hero-image img { object-position: 62% center; }
+  .navigation a { font-size: 12px; }
+  .cleanzy-task-info h4 { font-size: 13.5px; }
+  .cleanzy-task-info p { font-size: 12px; }
+  .cleanzy-progress-step strong { font-size: 11px; }
+}
