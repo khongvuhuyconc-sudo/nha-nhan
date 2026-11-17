@@ -13,8 +13,7 @@ export const SERVICES = [
   {
     id: 'deep',
     name: 'Vệ sinh kỹ',
-    description: 'Chăm chút những góc cần làm sạch sâu',
-    extra: 25_000,
+    description: 'Làm sạch chuyên sâu các khu vực bám bẩn, góc khuất và bề mặt cần vệ sinh kỹ.',
   },
   {
     id: 'kitchen',
