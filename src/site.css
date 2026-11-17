@@ -2478,3 +2478,215 @@ body {
   .hero-image img, .package-card { transition: none; }
   .hero-image:hover img, .package-card:hover { transform: none; }
 }
+
+
+/* =========================================================
+   CLEANZY JAPANDI 2026
+   Light oak, warm ivory, muted olive, quiet editorial UI.
+   Presentation-only layer: booking, pricing and APIs unchanged.
+   ========================================================= */
+:root {
+  --ink: #39372f;
+  --green: #526650;
+  --green-dark: #3d5140;
+  --muted: #77776e;
+  --cream: #f8f5ef;
+  --line: #e7dfd2;
+  --sage: #eeeae0;
+  --lime: #d7d6bc;
+  --gold: #c5a47a;
+  --jp-wood: #c4a785;
+  --jp-paper: #fffcf7;
+  --jp-shadow: 0 16px 44px rgba(71, 57, 40, .07);
+  color: var(--ink);
+  background: var(--cream);
+}
+body {
+  color: var(--ink);
+  background: var(--cream);
+  background-image: radial-gradient(circle at 92% 3%, rgba(199, 173, 138, .10), transparent 27%);
+}
+::selection { background: #e5d6c1; color: #39372f; }
+a, button { -webkit-tap-highlight-color: transparent; }
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 2px solid #8a745c;
+  outline-offset: 3px;
+}
+.site-header {
+  background: rgba(248, 245, 239, .96);
+  border-bottom: 1px solid #e7dfd2;
+  box-shadow: 0 5px 24px rgba(71, 57, 40, .035);
+  backdrop-filter: blur(14px);
+}
+.brand { color: var(--green-dark); }
+.navigation a { color: #625f56; }
+.navigation a:hover { color: var(--green-dark); }
+.header-cta {
+  border: 1px solid #a8a18f;
+  color: var(--green-dark);
+  background: transparent;
+  border-radius: 4px;
+}
+.header-cta:hover { background: var(--green-dark); border-color: var(--green-dark); color: white; }
+.hero { gap: clamp(28px, 5vw, 80px); padding-block: 76px 85px; }
+.hero-copy { position: relative; }
+.hero h1 {
+  color: #3f493e;
+  font-weight: 550;
+  letter-spacing: -.055em;
+  line-height: 1.16;
+}
+.hero h1 > span:first-child { color: #8c826f; }
+.hero-sparkle { color: #c2a27b; }
+.hero-copy > p { color: #6e6b62; line-height: 1.95; max-width: 470px; }
+.eyebrow { color: #8c7962; letter-spacing: .18em; font-weight: 700; }
+.tiny-star { color: #8b806b; background: #efe9dd; }
+.hero-benefits { color: #77746a; gap: 18px; }
+.hero-benefits svg { color: #74816c; }
+.hero-image {
+  background: #eae2d6;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: 20px 20px 0 #e8dfd1, 0 28px 60px rgba(69, 56, 40, .12);
+}
+.hero-image img { filter: saturate(.88) contrast(.98); }
+.image-label {
+  background: rgba(255, 252, 247, .92);
+  border: 1px solid #e9dfd1;
+  border-radius: 3px;
+  color: #575447;
+}
+.floating-note {
+  background: var(--jp-paper);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  box-shadow: var(--jp-shadow);
+}
+.note-icon { background: #eee9df; color: var(--green-dark); }
+.visual-flower { opacity: .6; }
+.button { border-radius: 5px; letter-spacing: .015em; }
+.button.primary, .quote-submit, .hero-button {
+  border-radius: 5px;
+  background: var(--green-dark);
+  color: #fffdf8;
+  box-shadow: 0 8px 22px rgba(61, 81, 64, .13);
+}
+.button.primary:hover:not(:disabled), .quote-submit:hover:not(:disabled) {
+  background: #2f4033;
+  box-shadow: 0 12px 24px rgba(61, 81, 64, .17);
+}
+.button.ghost { border-radius: 5px; }
+.section-heading { margin-bottom: 30px; }
+.section-heading h2, .about-copy h2, .voucher-copy h2, h2 {
+  color: #45483f;
+  letter-spacing: -.035em;
+  font-weight: 550;
+}
+.heading-note { color: #837c6d; }
+.about-section, .packages-section, .booking-section, .how-section,
+.pricing-section, .faq-section, .staff-section, .voucher-section {
+  scroll-margin-top: 110px;
+}
+.about-value, .package-card, .staff-card, .review-item, .cleanzy-review-card {
+  background: var(--jp-paper);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  box-shadow: 0 8px 25px rgba(71, 57, 40, .035);
+}
+.about-value:hover, .package-card:hover, .staff-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--jp-shadow);
+}
+.about-value .how-icon { color: var(--green-dark); }
+.package-card { position: relative; }
+.package-card.featured {
+  border: 1.5px solid #998a74;
+  background: #f4f0e8;
+  box-shadow: 0 14px 36px rgba(71, 57, 40, .08);
+}
+.package-flag {
+  background: #6a715c;
+  color: #fffdf7;
+  border-radius: 3px;
+}
+.package-head strong, .package-foot strong, .cleanzy-price strong {
+  color: var(--green-dark);
+}
+.cleanzy-price small { color: #817b70; }
+.packages-note { color: #756e63; }
+.booking-card {
+  background: var(--jp-paper);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  box-shadow: var(--jp-shadow);
+}
+.booking-form { background: #fffcf7; }
+.cleanzy-booking-progress {
+  background: #eee9df;
+  border-bottom: 1px solid #e0d7ca;
+}
+.cleanzy-progress-step { color: #575d4f; }
+.cleanzy-progress-step span { background: #64735e; color: #fff; }
+.cleanzy-progress-line { background: #c7bca9; }
+.service-option, .duration-options button {
+  border-radius: 5px;
+  background: #fffdfa;
+}
+.service-option:hover { border-color: #aa9a80; }
+.service-option.selected { border-color: #7b886f; background: #edf0e7; }
+.duration-options button.active { background: #526650; color: #fff; }
+.booking-form input, .booking-form select, .booking-form textarea {
+  border-radius: 4px;
+}
+.quote-panel {
+  border-radius: 0;
+  background: #f0ebe2;
+}
+.quote-total strong { color: var(--green-dark); }
+.quote-top, .quote-lines, .quote-note { color: #6c665b; }
+.quote-assurance { color: #53674f; }
+.voucher-ticket {
+  background: #fffaf2;
+  border: 1px solid #e1d4bf;
+  border-radius: 6px;
+  box-shadow: 0 8px 25px rgba(71, 57, 40, .045);
+}
+.voucher-ticket:hover { transform: translateY(-2px); }
+.staff-card h3 { color: #45483f; }
+.staff-avatar {
+  background: #e9e3d8;
+  color: #5c6657;
+  border: 1px solid #d6c8b5;
+}
+.staff-role, .staff-rating { color: #716c60; }
+.review-item, .cleanzy-review-card { border-radius: 6px; }
+.cleanzy-review-card blockquote { color: #514f47; }
+.cleanzy-review-avatar { background: #e8e2d7; color: #55624f; }
+.cleanzy-review-rating { color: #586b51; }
+.site-footer {
+  background: #e9e1d5;
+  border-top: 1px solid #d8c9b7;
+}
+.site-footer a:hover { color: #41553e; }
+@media (max-width: 900px) {
+  .hero { gap: 32px; }
+}
+@media (max-width: 760px) {
+  .site-header { backdrop-filter: none; }
+  .hero { padding-block: 38px 45px; }
+  .hero h1 { letter-spacing: -.04em; }
+  .hero-image {
+    border-radius: 4px 48px 4px 4px;
+    box-shadow: 9px 9px 0 #e8dfd1;
+  }
+  .about-value, .package-card, .staff-card, .review-item,
+  .cleanzy-review-card, .booking-card, .voucher-ticket { border-radius: 6px; }
+  .cleanzy-booking-progress { gap: 8px; }
+  .cleanzy-progress-step strong { line-height: 1.35; }
+  .button, .header-cta { min-height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .about-value, .package-card, .staff-card, .voucher-ticket,
+  .hero-image img, .button { transition: none; }
+  .about-value:hover, .package-card:hover, .staff-card:hover,
+  .voucher-ticket:hover, .hero-image:hover img { transform: none; }
+}
