@@ -2721,3 +2721,166 @@ a, button { -webkit-tap-highlight-color: transparent; }
   .japandi-gallery-item img { transition: none; }
   .japandi-gallery-item:hover img { transform: none; }
 }
+
+
+/* Cleanzy editorial redesign: reference-inspired Japanese timber studio */
+:root {
+  --ink: #47372e;
+  --green: #5c5948;
+  --green-dark: #3e3028;
+  --muted: #857b70;
+  --cream: #f7f3ec;
+  --line: #dcd3c6;
+  --sage: #f0e9de;
+  --lime: #e2d5c4;
+  --gold: #b77d58;
+  --jp-paper: #fdf9f2;
+  --jp-wood: #a87653;
+  --jp-shadow: 0 12px 30px rgba(62, 48, 40, .05);
+}
+body { background: var(--cream); color: var(--ink); }
+.container { width: min(1140px, calc(100% - 80px)); }
+.site-header { background: rgba(247, 243, 236, .97); border-color: #dcd3c6; box-shadow: none; }
+.header-inner { height: 78px; }
+.brand { color: #45342b; }
+.navigation a { color: #6b5d51; font-size: 11px; }
+.header-cta, .button.primary, .quote-submit, .hero-button {
+  background: #44352c;
+  border: 1px solid #44352c;
+  color: #fffaf2;
+  box-shadow: none;
+  border-radius: 2px;
+}
+.header-cta:hover, .button.primary:hover:not(:disabled), .quote-submit:hover:not(:disabled) { background: #6b4b37; border-color: #6b4b37; box-shadow: none; }
+.eyebrow { color: #aa7855; letter-spacing: .24em; font-size: 10px; font-weight: 600; }
+.tiny-star { background: transparent; color: #ae815e; width: 18px; height: 18px; }
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--line);
+}
+.hero-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(260px, .55fr);
+  column-gap: 45px;
+  align-items: center;
+}
+.hero-copy .eyebrow { grid-column: 1/-1; margin-bottom: 12px; }
+.hero h1 {
+  grid-column: 1;
+  margin: 0;
+  max-width: 760px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(48px, 5.7vw, 78px);
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -.055em;
+  color: #50392e;
+}
+.hero h1 > span:first-child { color: #a66d4e; font-style: italic; }
+.hero-sparkle { display: none; }
+.hero-copy > p {
+  grid-column: 2;
+  grid-row: 2;
+  color: #75695f;
+  font-size: 13px;
+  line-height: 1.85;
+  margin: 0 0 14px;
+}
+.hero-button { grid-column: 2; width: max-content; min-height: 40px; padding: 10px 18px; font-size: 11px; }
+.hero-benefits { grid-column: 1/-1; margin-top: 16px; border-top: 1px solid var(--line); padding-top: 18px; font-size: 11px; color: #766b60; }
+.hero-benefits svg { color: #a27959; }
+.hero-visual { grid-column: 1/-1; padding-bottom: 0; }
+.hero-image {
+  height: clamp(360px, 43vw, 560px);
+  border-radius: 0;
+  box-shadow: none;
+  background: #cdbda7;
+}
+.hero-image img { filter: saturate(.82) sepia(.09); object-position: center 53%; }
+.hero-image:hover img { transform: scale(1.015); }
+.image-label { border-radius: 0; background: rgba(253, 249, 242, .94); color: #59473a; }
+.floating-note { left: 18px; right: auto; bottom: 18px; border-radius: 0; padding: 12px 17px; }
+.visual-flower { display: none; }
+.section-heading h2, .about-copy h2, .voucher-copy h2,
+.japandi-gallery-heading h2, .how-intro h2, .pricing-copy h2,
+h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  letter-spacing: -.045em;
+  color: #573d30;
+}
+.section-heading h2 { font-size: clamp(29px, 3vw, 42px); line-height: 1.25; }
+.about-section, .packages-section, .booking-section, .how-section,
+.pricing-section, .faq-section, .staff-section, .voucher-section,
+.japandi-gallery-section { padding-top: 68px; padding-bottom: 68px; }
+.about-section, .packages-section, .how-section, .pricing-section,
+.staff-section, .japandi-gallery-section { border-bottom: 1px solid var(--line); }
+.about-value, .package-card, .staff-card, .review-item, .cleanzy-review-card {
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+}
+.about-value { border-left: 1px solid var(--line); padding: 15px 24px; }
+.about-value:hover, .package-card:hover, .staff-card:hover { box-shadow: none; transform: none; }
+.package-grid { gap: 18px; }
+.package-card { border: 1px solid var(--line); padding: 24px; }
+.package-card.featured { border: 1px solid #b8a18c; background: #f0e8dd; box-shadow: none; }
+.package-flag { border-radius: 0; background: #654b3c; }
+.package-head strong, .package-foot strong, .cleanzy-price strong { color: #624331; }
+.package-name { color: #9b704f; }
+.japandi-gallery-heading h2 { font-size: clamp(33px, 4vw, 50px); }
+.japandi-gallery-item, .japandi-gallery-item.is-featured { border-radius: 0; }
+.japandi-gallery-item img { filter: saturate(.68) sepia(.08); }
+.japandi-gallery-item figcaption { background: linear-gradient(transparent, rgba(42, 32, 25, .25)); }
+.booking-card { border-radius: 0; box-shadow: none; background: #fcf8f1; }
+.booking-form { background: #fcf8f1; }
+.cleanzy-booking-progress { background: #eae0d3; }
+.cleanzy-progress-step span { background: #644c3d; }
+.cleanzy-progress-line { background: #c9b6a3; }
+.service-option, .duration-options button { border-radius: 0; }
+.service-option.selected { background: #efe5d8; border-color: #9f8269; }
+.duration-options button.active { background: #594336; }
+.quote-panel { background: #eae0d3; }
+.quote-total strong { color: #513b2d; }
+.voucher-ticket { background: #f2e9dd; border-radius: 0; border-color: #d6c6b3; }
+.staff-card { border-top: 1px solid var(--line); padding-top: 22px; }
+.staff-card h3 { color: #594334; }
+.staff-avatar { background: #e5d5c2; border-color: #c9b69e; color: #674b38; }
+.review-item, .cleanzy-review-card { border: 1px solid var(--line); padding: 22px; background: #faf5ed; }
+.cleanzy-review-avatar { background: #e8d8c5; color: #644b39; }
+.cleanzy-review-rating { color: #8c6346; }
+.site-footer { background: #403027; color: #f4e9db; border-top: 0; }
+.site-footer a { color: #f4e9db; }
+.site-footer a:hover { color: #dfb891; }
+@media (max-width: 900px) {
+  .container { width: calc(100% - 48px); }
+  .hero-copy { grid-template-columns: 1.2fr 1fr; gap: 14px 25px; }
+  .hero h1 { font-size: clamp(44px, 6vw, 64px); }
+}
+@media (max-width: 760px) {
+  .container { width: calc(100% - 32px); }
+  .header-inner { height: 65px; }
+  .hero { padding-top: 32px; padding-bottom: 35px; gap: 22px; }
+  .hero-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+  .hero-copy .eyebrow { margin: 0; }
+  .hero h1 { font-size: clamp(45px, 10vw, 65px); }
+  .hero-copy > p { margin: 0; font-size: 13px; }
+  .hero-benefits { margin-top: 3px; padding-top: 12px; }
+  .hero-image { height: 320px; border-radius: 0; box-shadow: none; }
+  .floating-note { left: 8px; right: 8px; bottom: 8px; }
+  .about-section, .packages-section, .booking-section, .how-section,
+  .pricing-section, .faq-section, .staff-section, .voucher-section,
+  .japandi-gallery-section { padding-top: 42px; padding-bottom: 42px; }
+  .about-value { border-left: 0; border-top: 1px solid var(--line); padding: 18px 4px; }
+  .package-card { padding: 22px; }
+  .japandi-gallery-item, .japandi-gallery-item.is-featured { border-radius: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-image img { transition: none; }
+  .hero-image:hover img { transform: none; }
+}
