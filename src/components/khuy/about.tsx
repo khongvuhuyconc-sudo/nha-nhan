@@ -109,10 +109,10 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
       </div>
       <p className="packages-note">
       <strong>Dịch vụ vệ sinh kỹ:</strong> Phù hợp với những không gian cần làm sạch chuyên sâu, xử lý bụi bẩn tích tụ, vệ sinh các góc khuất và bề mặt khó làm sạch.
-      Phụ thu theo thời lượng:(Khởi điểm 2 giờ là phụ thu thêm 25000, mỗi 1 tiếng cộng thêm 5000
+      Phụ thu theo thời lượng:(Khởi điểm 2 giờ là phụ thu thêm 25000, mỗi 1 tiếng cộng thêm 25000)
         2 giờ +25.000đ,
-        3 giờ +30.000đ,
-        4 giờ +35.000đ.
+        3 giờ +50.000đ,
+        4 giờ +75.000đ.
       </p>
         Diện tích là mức tham khảo cho nhà ở bình thường. Nhà nhiều đồ hoặc lâu chưa dọn có thể
         cần thêm thời gian — hãy ghi chú khi đặt lịch để chúng mình tư vấn.
