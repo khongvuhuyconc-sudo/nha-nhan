@@ -649,7 +649,7 @@ function Home() {
                   <Clock3 size={17} /> {h} giờ · ≈ {packageFor(h).area} m²
                   {h === 3 && <em>Vừa vặn</em>}
                 </span>
-                <strong>{formatVnd(250_000 + (h - 2) * 50_000)}</strong>
+                <strong>{formatVnd(150_000 + (h - 2) * 50_000)}</strong>
               </div>
             ))}
             <p>
