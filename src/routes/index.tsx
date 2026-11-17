@@ -574,10 +574,6 @@ function Home() {
                 <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" alt="Phòng ngủ thư thái theo phong cách Japandi" loading="lazy" decoding="async" />
                 <figcaption><span>Nghỉ ngơi</span><strong>Phòng ngủ thư thái</strong></figcaption>
               </figure>
-              <figure className="japandi-gallery-item">
-                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="Góc nhà tinh tế theo phong cách Japandi" loading="lazy" decoding="async" />
-                <figcaption><span>Sống chậm</span><strong>Góc nhà tinh tế</strong></figcaption>
-              </figure>
           </div>
           <p className="japandi-gallery-disclaimer">Ảnh minh họa phong cách sống, không phải hình ảnh công trình Cleanzy đã thực hiện.</p>
         </section>
