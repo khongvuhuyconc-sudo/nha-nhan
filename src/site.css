@@ -2884,3 +2884,58 @@ h2 {
   .hero-image img { transition: none; }
   .hero-image:hover img { transform: none; }
 }
+
+
+/* Cleanzy wood-and-cream palette + prominent staff avatar icons */
+:root {
+  --ink: #49362C;
+  --green: #7A8067;
+  --green-dark: #49362C;
+  --muted: #827469;
+  --cream: #F7F3EC;
+  --line: #D8C3A5;
+  --sage: #F0E8DB;
+  --lime: #E5D9C8;
+  --gold: #A67C5B;
+  --jp-paper: #FFFCF7;
+  --jp-wood: #A67C5B;
+}
+body { background: #F7F3EC; color: #49362C; }
+.site-header { background: rgba(247,243,236,.97); border-color: #D8C3A5; }
+.brand, .navigation a:hover { color: #49362C; }
+.eyebrow, .package-name, .hero h1 > span:first-child { color: #A67C5B; }
+.hero h1, .section-heading h2, .about-copy h2, .voucher-copy h2, .japandi-gallery-heading h2 { color: #49362C; }
+.header-cta, .button.primary, .quote-submit, .hero-button { background: #49362C; border-color: #49362C; color: #FFFCF7; }
+.header-cta:hover, .button.primary:hover:not(:disabled), .quote-submit:hover:not(:disabled) { background: #604637; border-color: #604637; }
+.package-card.featured { background: #F0E8DB; border-color: #A67C5B; }
+.package-flag { background: #7A8067; }
+.cleanzy-booking-progress, .quote-panel { background: #F0E8DB; }
+.cleanzy-progress-step span { background: #7A8067; }
+.service-option.selected { background: #F0E8DB; border-color: #7A8067; }
+.duration-options button.active { background: #49362C; color: #fff; }
+.voucher-ticket { background: #F0E8DB; border-color: #D8C3A5; }
+.site-footer { background: #49362C; color: #F7F3EC; }
+.site-footer a { color: #F7F3EC; }
+.site-footer a:hover { color: #D8C3A5; }
+/* High-contrast avatar initials: warm oak, olive, clay, cocoa */
+.staff-card .staff-avatar {
+  width: 64px;
+  height: 64px;
+  border: 2px solid rgba(255,255,255,.88);
+  box-shadow: 0 0 0 2px #D8C3A5, 0 5px 14px rgba(73,54,44,.13);
+  background: #A67C5B;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+.staff-card .staff-avatar.tone-1 { background: #647451; color: #fff; }
+.staff-card .staff-avatar.tone-2 { background: #B66C4F; color: #fff; }
+.staff-card .staff-avatar.tone-3 { background: #665047; color: #fff; }
+.staff-card h3 { color: #49362C; }
+.stars .on { color: #C38A31; }
+.cleanzy-review-avatar { background: #7A8067; color: #fff; font-weight: 800; }
+.cleanzy-review-rating { color: #7A8067; }
+@media (max-width: 760px) {
+  .staff-card .staff-avatar { width: 56px; height: 56px; font-size: 17px; }
+}
