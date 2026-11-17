@@ -261,11 +261,17 @@ function Home() {
           <div className="hero-visual">
             <div className="hero-image">
               <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85"
+                src="/img/cleanzy-banner-moi.webp"
                 sizes="(max-width: 760px) 100vw, 1100px"
-                width="1600"
-                height="900"
-                alt="Không gian sống phong cách Japandi với gỗ tự nhiên và ánh sáng ấm, ảnh minh họa"
+                width="1802"
+                height="873"
+                alt="Nhân viên Cleanzy vui vẻ giơ ngón cái trong phòng khách sạch sẽ, ảnh minh họa"
+                onError={(event) => {
+                  const image = event.currentTarget
+                  image.onerror = null
+                  image.src =
+                    'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85'
+                }}
                 fetchPriority="high"
               />
             </div>
