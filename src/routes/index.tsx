@@ -548,10 +548,10 @@ function Home() {
         <section className="japandi-gallery-section container" id="khong-gian-song" aria-labelledby="japandi-gallery-title">
           <div className="japandi-gallery-heading">
             <div>
-              <span className="eyebrow">CẢM HỨNG KHÔNG GIAN SỐNG</span>
-              <h2 id="japandi-gallery-title">Một ngôi nhà gọn gàng.<br />Một ngày thật an yên.</h2>
+              <span className="eyebrow">KHÔNG GIAN SỐNG CÙNG CLEANZY</span>
+              <h2 id="japandi-gallery-title">Nhà sạch tinh tươm.<br />Thêm thời gian cho bạn.</h2>
             </div>
-            <p>Những góc nhà sáng thoáng, chất liệu gỗ tự nhiên và gam màu dịu nhẹ — cảm hứng để chăm chút tổ ấm mỗi ngày.</p>
+            <p>Từ phòng khách đến phòng ngủ, Cleanzy giúp bạn chăm chút tổ ấm để mỗi ngày trở về nhà đều nhẹ nhàng hơn.</p>
           </div>
           <div className="japandi-gallery-grid">
               <figure className="japandi-gallery-item is-featured">
@@ -563,8 +563,8 @@ function Home() {
                 <figcaption><span>Góc ấm áp</span><strong>Gỗ sồi và sắc kem</strong></figcaption>
               </figure>
               <figure className="japandi-gallery-item">
-                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="Không gian tối giản theo phong cách Japandi" loading="lazy" decoding="async" />
-                <figcaption><span>Tinh gọn</span><strong>Không gian tối giản</strong></figcaption>
+                <img src="/img/khach-hang-hai-long.webp" alt="Hình ảnh minh họa khách hàng hài lòng khi sử dụng dịch vụ dọn nhà" loading="lazy" decoding="async" width="800" height="520" />
+                <figcaption><span>Trải nghiệm dịch vụ</span><strong>Niềm vui khi nhà sạch</strong></figcaption>
               </figure>
               <figure className="japandi-gallery-item">
                 <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Bếp gọn gàng theo phong cách Japandi" loading="lazy" decoding="async" />
@@ -575,7 +575,7 @@ function Home() {
                 <figcaption><span>Nghỉ ngơi</span><strong>Phòng ngủ thư thái</strong></figcaption>
               </figure>
           </div>
-          <p className="japandi-gallery-disclaimer">Ảnh minh họa phong cách sống, không phải hình ảnh công trình Cleanzy đã thực hiện.</p>
+          <p className="japandi-gallery-disclaimer">Hình ảnh minh họa không gian sống và trải nghiệm dịch vụ; không phải hình ảnh khách hàng hoặc công trình thực tế của Cleanzy.</p>
         </section>
 
         <section className="how-section container" id="cach-hoat-dong">
