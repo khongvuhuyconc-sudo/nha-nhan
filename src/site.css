@@ -3071,7 +3071,7 @@ body { background: #F7F3EC; color: #49362C; }
 /* Cleanzy typography & hero QA — Vietnamese first, premium Japandi */
 :root {
   --font-body: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-heading: 'Noto Serif', Georgia, 'Times New Roman', serif;
+  --font-heading: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 html { text-rendering: optimizeLegibility; }
 body { font-family: var(--font-body); font-size: 14px; line-height: 1.65; }
@@ -3123,4 +3123,31 @@ button, input, select, textarea { font-family: var(--font-body); }
   .cleanzy-task-info h4 { font-size: 13.5px; }
   .cleanzy-task-info p { font-size: 12px; }
   .cleanzy-progress-step strong { font-size: 11px; }
+}
+
+
+/* Vietnamese diacritics fix: use one complete Vietnamese-capable font in headings */
+.hero h1,
+main h2,
+.about-copy h2,
+.voucher-copy h2,
+.cleanzy-task-heading h3 {
+  font-family: var(--font-heading);
+  font-synthesis: none;
+  letter-spacing: -.025em;
+  line-height: 1.38;
+  font-weight: 600;
+}
+.hero h1 {
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -.04em;
+}
+.booking-section .section-heading h2 {
+  font-family: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: clamp(29px, 3.3vw, 40px);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -.025em;
+  overflow-wrap: break-word;
 }
