@@ -546,6 +546,43 @@ function Home() {
           </div>
         </section>
 
+        <section className="japandi-gallery-section container" id="khong-gian-song" aria-labelledby="japandi-gallery-title">
+          <div className="japandi-gallery-heading">
+            <div>
+              <span className="eyebrow">CẢM HỨNG KHÔNG GIAN SỐNG</span>
+              <h2 id="japandi-gallery-title">Một ngôi nhà gọn gàng.<br />Một ngày thật an yên.</h2>
+            </div>
+            <p>Những góc nhà sáng thoáng, chất liệu gỗ tự nhiên và gam màu dịu nhẹ — cảm hứng để chăm chút tổ ấm mỗi ngày.</p>
+          </div>
+          <div className="japandi-gallery-grid">
+              <figure className="japandi-gallery-item is-featured">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Phòng khách sáng thoáng theo phong cách Japandi" loading="lazy" decoding="async" />
+                <figcaption><span>Góc thư giãn</span><strong>Phòng khách sáng thoáng</strong></figcaption>
+              </figure>
+              <figure className="japandi-gallery-item">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Gỗ sồi và sắc kem theo phong cách Japandi" loading="lazy" decoding="async" />
+                <figcaption><span>Góc ấm áp</span><strong>Gỗ sồi và sắc kem</strong></figcaption>
+              </figure>
+              <figure className="japandi-gallery-item">
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="Không gian tối giản theo phong cách Japandi" loading="lazy" decoding="async" />
+                <figcaption><span>Tinh gọn</span><strong>Không gian tối giản</strong></figcaption>
+              </figure>
+              <figure className="japandi-gallery-item">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Bếp gọn gàng theo phong cách Japandi" loading="lazy" decoding="async" />
+                <figcaption><span>Nếp sống ngăn nắp</span><strong>Bếp gọn gàng</strong></figcaption>
+              </figure>
+              <figure className="japandi-gallery-item">
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" alt="Phòng ngủ thư thái theo phong cách Japandi" loading="lazy" decoding="async" />
+                <figcaption><span>Nghỉ ngơi</span><strong>Phòng ngủ thư thái</strong></figcaption>
+              </figure>
+              <figure className="japandi-gallery-item">
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="Góc nhà tinh tế theo phong cách Japandi" loading="lazy" decoding="async" />
+                <figcaption><span>Sống chậm</span><strong>Góc nhà tinh tế</strong></figcaption>
+              </figure>
+          </div>
+          <p className="japandi-gallery-disclaimer">Ảnh minh họa phong cách sống, không phải hình ảnh công trình Cleanzy đã thực hiện.</p>
+        </section>
+
         <section className="how-section container" id="cach-hoat-dong">
           <div className="how-intro">
             <span className="eyebrow">NHẸ NHÀNG TỪ BƯỚC ĐẦU</span>
