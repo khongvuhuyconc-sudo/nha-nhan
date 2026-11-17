@@ -187,8 +187,7 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
         <strong>Dịch vụ vệ sinh kỹ:</strong> Phù hợp với những
         không gian cần làm sạch chuyên sâu, xử lý bụi bẩn tích tụ,
         vệ sinh các góc khuất và bề mặt khó làm sạch.
-        Phụ thu theo thời lượng: 2 giờ +25.000đ,
-        3 giờ +50.000đ, 4 giờ +75.000đ.
+        Phụ thu cố định 25.000đ/ca, áp dụng cho cả ba gói 2 giờ, 3 giờ và 4 giờ.
       </p>
 
 
