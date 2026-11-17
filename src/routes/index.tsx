@@ -275,19 +275,7 @@ function Home() {
                 fetchPriority="high"
               />
             </div>
-            <div className="image-label">
-              <span className="status-dot" /> Nhà gọn gàng, lòng nhẹ tênh
-            </div>
-            <div className="floating-note">
-              <span className="note-icon">
-                <Leaf size={23} />
-              </span>
-              <div>
-                <strong>Thêm một chút thảnh thơi.</strong>
-                <span>Bớt một chút việc nhà.</span>
-              </div>
-              <Check size={17} />
-            </div>
+
             <svg className="visual-flower" width="74" height="74" viewBox="0 0 74 74" aria-hidden="true">
               <path
                 d="M37 4c6 0 9 17 9 17s15-10 19-5-7 19-7 19 18 2 16 9-20 7-20 7 8 17 1 21-19-10-19-10-11 14-17 10 1-22 1-22S2 52 0 44s18-9 18-9S7 20 12 16s17 6 17 6S30 4 37 4Z"
