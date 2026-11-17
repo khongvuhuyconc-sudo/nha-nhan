@@ -157,7 +157,7 @@ export type BookingDraft = {
 }
 
 export function quote(b: BookingDraft, discountPercent = 0) {
-  const base = 250_000 + (b.hours - 2) * 50_000
+  const base = 150_000 + (b.hours - 2) * 50_000
   const day = new Date(`${b.date}T12:00:00+07:00`).getUTCDay()
   const weekend = day === 0 || day === 6 ? 25_000 : 0
   const evening = Number(b.time.split(':')[0]) >= 17 ? 25_000 : 0
