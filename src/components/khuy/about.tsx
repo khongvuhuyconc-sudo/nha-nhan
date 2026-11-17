@@ -93,8 +93,9 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
               ))}
             </ul>
             <div className="package-foot">
-              <span>
-                Từ <strong>{formatVnd(250_000 + (p.hours - 2) * 50_000)}</strong>
+              <span className="cleanzy-price">
+                <small>Giá dịch vụ từ</small>
+                <strong>{formatVnd(250_000 + (p.hours - 2) * 50_000)}</strong>
               </span>
               <a
                 href="#dat-lich"
