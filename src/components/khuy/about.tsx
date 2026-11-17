@@ -120,7 +120,7 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
         <div className="cleanzy-task-grid">
           <article className="cleanzy-task-card">
             <div className="cleanzy-task-photo">
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="Ảnh minh họa công việc: hút bụi & lau sàn" loading="lazy" decoding="async" width="800" height="520" />
+              <img src="https://images.unsplash.com/photo-1758272421516-9593de0fb5bf?auto=format&fit=crop&w=800&q=80" alt="Ảnh minh họa công việc: hút bụi & lau sàn" loading="lazy" decoding="async" width="800" height="520" />
               <span className="cleanzy-task-number">01</span>
             </div>
             <div className="cleanzy-task-info">
@@ -130,7 +130,7 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
           </article>
           <article className="cleanzy-task-card">
             <div className="cleanzy-task-photo">
-              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Ảnh minh họa công việc: lau bàn ghế & bề mặt" loading="lazy" decoding="async" width="800" height="520" />
+              <img src="https://skilledcontractors.nl/images/seo/hero/cleaning.webp" alt="Ảnh minh họa công việc: lau bàn ghế & bề mặt" loading="lazy" decoding="async" width="800" height="520" />
               <span className="cleanzy-task-number">02</span>
             </div>
             <div className="cleanzy-task-info">
@@ -140,7 +140,7 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
           </article>
           <article className="cleanzy-task-card">
             <div className="cleanzy-task-photo">
-              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Ảnh minh họa công việc: vệ sinh phòng tắm" loading="lazy" decoding="async" width="800" height="520" />
+              <img src="https://cdn.fastpixel.io/fp/ret_img%2Bv_d199%2Bw_911%2Bh_803%2Bq_lossy%2Bto_webp/cottagecare.com%2Fwp-content%2Fuploads%2F2022%2F11%2FBathroom-Cleaning-Services.jpg" alt="Ảnh minh họa công việc: vệ sinh phòng tắm" loading="lazy" decoding="async" width="800" height="520" />
               <span className="cleanzy-task-number">03</span>
             </div>
             <div className="cleanzy-task-info">
@@ -150,7 +150,7 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
           </article>
           <article className="cleanzy-task-card">
             <div className="cleanzy-task-photo">
-              <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80" alt="Ảnh minh họa công việc: làm sạch khu vực bếp" loading="lazy" decoding="async" width="800" height="520" />
+              <img src="https://www.ltcaresiivous.com/images/service-moving.png" alt="Ảnh minh họa công việc: làm sạch khu vực bếp" loading="lazy" decoding="async" width="800" height="520" />
               <span className="cleanzy-task-number">04</span>
             </div>
             <div className="cleanzy-task-info">
@@ -160,7 +160,7 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
           </article>
           <article className="cleanzy-task-card">
             <div className="cleanzy-task-photo">
-              <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Ảnh minh họa công việc: sắp xếp đồ đạc" loading="lazy" decoding="async" width="800" height="520" />
+              <img src="https://roombyroomcleaningllc.com/Home-page-hero.webp" alt="Ảnh minh họa công việc: sắp xếp đồ đạc" loading="lazy" decoding="async" width="800" height="520" />
               <span className="cleanzy-task-number">05</span>
             </div>
             <div className="cleanzy-task-info">
@@ -170,7 +170,7 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
           </article>
           <article className="cleanzy-task-card">
             <div className="cleanzy-task-photo">
-              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt="Ảnh minh họa công việc: lau kính & góc khuất" loading="lazy" decoding="async" width="800" height="520" />
+              <img src="https://sparktexcleaners.com/images/services/team-deep-clean-1200.webp" alt="Ảnh minh họa công việc: lau kính & góc khuất" loading="lazy" decoding="async" width="800" height="520" />
               <span className="cleanzy-task-number">06</span>
             </div>
             <div className="cleanzy-task-info">
@@ -179,7 +179,7 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
             </div>
           </article>
         </div>
-        <p className="cleanzy-task-caption">Ảnh minh họa; phạm vi công việc cụ thể phụ thuộc vào gói dịch vụ và thời lượng bạn chọn.</p>
+        <p className="cleanzy-task-caption">Ảnh minh họa từ các nguồn công khai, không phải nhân viên Cleanzy. Phạm vi công việc phụ thuộc vào gói dịch vụ và thời lượng bạn chọn.</p>
       </section>
 
       
