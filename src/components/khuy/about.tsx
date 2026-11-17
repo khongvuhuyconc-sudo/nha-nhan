@@ -95,7 +95,7 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
             <div className="package-foot">
               <span className="cleanzy-price">
                 <small>Giá dịch vụ từ</small>
-                <strong>{formatVnd(250_000 + (p.hours - 2) * 50_000)}</strong>
+                <strong>{formatVnd(150_000 + (p.hours - 2) * 50_000)}</strong>
               </span>
               <a
                 href="#dat-lich"
@@ -115,7 +115,7 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
             <span className="eyebrow">CÔNG VIỆC CỦA CLEANZY</span>
             <h3 id="cleanzy-task-title">Chúng mình chăm chút những gì?</h3>
           </div>
-          <p>Mỗi công việc đều có hình ảnh minh họa để bạn dễ hình dung dịch vụ trước khi đặt lịch.</p>
+          <p>Hình ảnh minh họa các công việc và trải nghiệm dịch vụ để bạn dễ hình dung trước khi đặt lịch.</p>
         </div>
         <div className="cleanzy-task-grid">
           <article className="cleanzy-task-card">
@@ -150,12 +150,12 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
           </article>
           <article className="cleanzy-task-card">
             <div className="cleanzy-task-photo">
-              <img src="https://www.ltcaresiivous.com/images/service-moving.png" alt="Ảnh minh họa công việc: làm sạch khu vực bếp" loading="lazy" decoding="async" width="800" height="520" />
+              <img src="https://www.ltcaresiivous.com/images/service-moving.png" alt="Ảnh minh họa trải nghiệm khách hàng hài lòng với dịch vụ Cleanzy" loading="lazy" decoding="async" width="800" height="520" />
               <span className="cleanzy-task-number">04</span>
             </div>
             <div className="cleanzy-task-info">
-              <h4>Làm sạch khu vực bếp</h4>
-              <p>Lau mặt bếp, bàn bếp, bồn rửa và sắp xếp khu vực nấu nướng.</p>
+              <h4>Khách hàng hài lòng</h4>
+              <p>Cleanzy hướng đến trải nghiệm phục vụ tận tâm, nhà cửa gọn gàng và khách hàng an tâm.</p>
             </div>
           </article>
           <article className="cleanzy-task-card">
@@ -179,7 +179,7 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
             </div>
           </article>
         </div>
-        <p className="cleanzy-task-caption">Ảnh minh họa từ các nguồn công khai, không phải nhân viên Cleanzy. Phạm vi công việc phụ thuộc vào gói dịch vụ và thời lượng bạn chọn.</p>
+        <p className="cleanzy-task-caption">Hình ảnh minh họa công việc. Nội dung thực hiện phụ thuộc vào gói dịch vụ và thời lượng đã chọn.</p>
       </section>
 
       
@@ -191,11 +191,7 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
         3 giờ +50.000đ, 4 giờ +75.000đ.
       </p>
 
-      <p className="packages-note">
-        Diện tích là mức tham khảo cho nhà ở bình thường.
-        Nhà nhiều đồ hoặc lâu chưa dọn có thể cần thêm
-        thời gian — hãy ghi chú khi đặt lịch để chúng mình tư vấn.
-      </p>
+
     </section>
   )
 }
