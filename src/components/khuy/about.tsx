@@ -8,9 +8,9 @@ export function AboutSection() {
       <div className="about-copy">
         <span className="eyebrow">VỀ CLEANZY</span>
         <h2>
-          Một đội nhỏ, tận tâm,
+          Không gian sạch đẹp,
           <br />
-          giữ nhà bạn luôn gọn.
+          cuộc sống thảnh thơi.
         </h2>
         <p>
           Cleanzy là dịch vụ dọn nhà theo giờ dành cho căn hộ và nhà phố. Bạn chọn thời
@@ -27,7 +27,7 @@ export function AboutSection() {
         {[
           {
             icon: Users,
-            title: `Rất nhiều nhân viên tận tâm`,
+            title: `Đội ngũ nhân viên tận tâm`,
             text: 'Đội ngũ cố định, được hướng dẫn quy trình dọn dẹp thống nhất.',
           },
           {
@@ -76,7 +76,7 @@ export function PackagesSection({ onPick }: { onPick: (hours: number) => void })
           <article className={`package-card ${p.hours === 3 ? 'featured' : ''}`} key={p.hours}>
             {p.hours === 3 && (
               <span className="package-flag">
-                <Sparkles size={12} /> Được chọn nhiều
+                <Sparkles size={12} /> Gói đề xuất
               </span>
             )}
             <span className="package-name">{p.name}</span>
